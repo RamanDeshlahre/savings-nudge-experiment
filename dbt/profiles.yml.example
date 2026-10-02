@@ -1,0 +1,11 @@
+# Copy to ~/.dbt/profiles.yml and fill in your Google Cloud project.
+savings_nudge:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth            # run `gcloud auth application-default login` first
+      project: your-gcp-project-id
+      dataset: analytics       # dbt builds models here
+      location: EU
+      threads: 4

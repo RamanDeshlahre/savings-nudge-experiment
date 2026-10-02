@@ -1,0 +1,23 @@
+name: savings_nudge
+version: "1.0.0"
+config-version: 2
+profile: savings_nudge
+
+model-paths: ["models"]
+test-paths: ["tests"]
+
+# Unit economics used by the value model. Keep in sync with src/config.py
+# (src/02_build_warehouse.py checks that they match).
+vars:
+  interchange_rate: 0.002
+  current_account_margin: 0.030
+  savings_margin: 0.012
+  cost_to_serve_monthly: 1.20
+  cost_per_support_contact: 4.00
+
+models:
+  savings_nudge:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

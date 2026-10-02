@@ -1,0 +1,189 @@
+{
+  "checks": [
+    {
+      "check": "Primary, naive (exposure logs)",
+      "segment": "all",
+      "estimate": 0.05969931326236953,
+      "ci_low": 0.05838326712909198,
+      "ci_high": 0.06101535939564708,
+      "truth": 0.056881,
+      "error": 0.0028183132623695317,
+      "ci_covers_truth": false
+    },
+    {
+      "check": "Primary, ITT",
+      "segment": "all",
+      "estimate": 0.05679563806171441,
+      "ci_low": 0.05550822316582048,
+      "ci_high": 0.058083052957608336,
+      "truth": 0.056881,
+      "error": -8.536193828559413e-05,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "Primary, ITT + CUPED",
+      "segment": "all",
+      "estimate": 0.0568642947262884,
+      "ci_low": 0.05560008292822301,
+      "ci_high": 0.05812850652435379,
+      "truth": 0.056881,
+      "error": -1.67052737116008e-05,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "Primary by segment",
+      "segment": "student",
+      "estimate": 0.0022222224964103116,
+      "ci_low": 0.0005288353524177214,
+      "ci_high": 0.003915609640402901,
+      "truth": 0.0020376974019358125,
+      "error": 0.00018452509447449902,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "Primary by segment",
+      "segment": "salaried_under_35",
+      "estimate": 0.09642328186173871,
+      "ci_low": 0.09398365429864257,
+      "ci_high": 0.09886290942483485,
+      "truth": 0.09706391962917098,
+      "error": -0.00064063776743227,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "Primary by segment",
+      "segment": "salaried_35_plus",
+      "estimate": 0.06860915892847698,
+      "ci_low": 0.06591734031308806,
+      "ci_high": 0.0713009775438659,
+      "truth": 0.06666186451530286,
+      "error": 0.001947294413174122,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "Primary by segment",
+      "segment": "self_employed",
+      "estimate": 0.016854357654467474,
+      "ci_low": 0.014275814373395972,
+      "ci_high": 0.019432900935538976,
+      "truth": 0.019063627692287168,
+      "error": -0.0022092700378196946,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "6-month value (observed)",
+      "segment": "student",
+      "estimate": -0.8624311886991753,
+      "ci_low": -0.9112598254140616,
+      "ci_high": -0.8136025519842891,
+      "truth": -0.9047479777672657,
+      "error": 0.04231678906809033,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "24-month LTV (projected)",
+      "segment": "student",
+      "estimate": -1.76084312313019,
+      "ci_low": -1.9212109619390023,
+      "ci_high": -1.6004752843213776,
+      "truth": -2.081416540826723,
+      "error": 0.3205734176965329,
+      "ci_covers_truth": false
+    },
+    {
+      "check": "6-month value (observed)",
+      "segment": "salaried_under_35",
+      "estimate": 1.7626366021198017,
+      "ci_low": 1.6045837736455528,
+      "ci_high": 1.9206894305940505,
+      "truth": 1.8037947280963988,
+      "error": -0.04115812597659718,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "24-month LTV (projected)",
+      "segment": "salaried_under_35",
+      "estimate": 6.849714301726898,
+      "ci_low": 6.302225472375618,
+      "ci_high": 7.397203131078179,
+      "truth": 6.555422019682545,
+      "error": 0.29429228204435365,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "6-month value (observed)",
+      "segment": "salaried_35_plus",
+      "estimate": 1.9097272502279878,
+      "ci_low": 1.6428835275289984,
+      "ci_high": 2.176570972926977,
+      "truth": 1.6698288713343576,
+      "error": 0.2398983788936302,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "24-month LTV (projected)",
+      "segment": "salaried_35_plus",
+      "estimate": 7.493266510431354,
+      "ci_low": 6.5449198489598,
+      "ci_high": 8.441613171902908,
+      "truth": 6.230098367668716,
+      "error": 1.2631681427626384,
+      "ci_covers_truth": false
+    },
+    {
+      "check": "6-month value (observed)",
+      "segment": "self_employed",
+      "estimate": -0.9190309577324349,
+      "ci_low": -1.2038676910552255,
+      "ci_high": -0.6341942244096443,
+      "truth": -0.6902756308406539,
+      "error": -0.22875532689178102,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "24-month LTV (projected)",
+      "segment": "self_employed",
+      "estimate": -2.3731889422557515,
+      "ci_low": -3.3526342310828063,
+      "ci_high": -1.3937436534286967,
+      "truth": -1.3839795956483167,
+      "error": -0.9892093466074348,
+      "ci_covers_truth": false
+    },
+    {
+      "check": "6-month value (observed)",
+      "segment": "all",
+      "estimate": 0.8109636436288135,
+      "ci_low": 0.7025070926107106,
+      "ci_high": 0.9194201946469163,
+      "truth": 0.8009203688,
+      "error": 0.010043274828813509,
+      "ci_covers_truth": true
+    },
+    {
+      "check": "24-month LTV (projected)",
+      "segment": "all",
+      "estimate": 3.6999785850638176,
+      "ci_low": 3.318356362821064,
+      "ci_high": 4.081600807306571,
+      "truth": 3.3849996136,
+      "error": 0.3149789714638178,
+      "ci_covers_truth": true
+    }
+  ],
+  "decision": {
+    "estimated_launch_segments": [
+      "salaried_35_plus",
+      "salaried_under_35"
+    ],
+    "true_positive_segments": [
+      "salaried_35_plus",
+      "salaried_under_35"
+    ],
+    "decision_correct": true,
+    "true_targeted_value": 405009.63656,
+    "estimated_targeted_value": 447767.7170134573,
+    "true_full_value": 338499.96135999996,
+    "estimated_full_value": 373475.91314216226
+  }
+}

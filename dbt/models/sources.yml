@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw tables as they land from the app, payments ledger and experiment service.
+    tables:
+      - name: customers
+        description: One row per eligible customer, with profile attributes.
+      - name: assignments
+        description: Server-side experiment allocation. Source of truth for who is in which arm.
+      - name: exposures
+        description: Client-side "nudge viewed" events. Known to be unreliable on some app versions.
+      - name: pre_period_activity
+        description: Behaviour in the 30 days before the experiment started (used for CUPED).
+      - name: salary_events
+        description: First day (since assignment) a salary deposit was received.
+      - name: pot_events
+        description: Day (since assignment) a savings pot was created.
+      - name: monthly_activity
+        description: One row per open account per month after assignment.
+      - name: weekly_pot_transfers
+        description: Transfers into savings pots per user per week (weeks with zero transfers are absent).

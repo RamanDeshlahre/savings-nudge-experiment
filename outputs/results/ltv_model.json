@@ -1,0 +1,139 @@
+{
+  "retention": {
+    "salaried_35_plus|0": 0.9924915162386709,
+    "salaried_35_plus|1": 0.9928206739977905,
+    "salaried_under_35|0": 0.9891776150867571,
+    "salaried_under_35|1": 0.9898672409188463,
+    "self_employed|0": 0.985806902390429,
+    "self_employed|1": 0.9860038588618916,
+    "student|0": 0.976119110177567,
+    "student|1": 0.9758857278555013
+  },
+  "late_switch_rate": {
+    "salaried_35_plus|0": 0.007925165648954138,
+    "salaried_35_plus|1": 0.007961741756858797,
+    "salaried_under_35|0": 0.00972761896198483,
+    "salaried_under_35|1": 0.009955581235780579,
+    "self_employed|0": 0.005012034886163782,
+    "self_employed|1": 0.004704059157662247,
+    "student|0": 0.0028503963222283645,
+    "student|1": 0.003140395862744533
+  },
+  "dv_per_month": {
+    "salaried_35_plus": 7.973813195260478,
+    "salaried_under_35": 5.343270955562798,
+    "self_employed": 7.962079820019724,
+    "student": 1.6509676450617283
+  },
+  "ltv_by_segment": [
+    {
+      "segment": "student",
+      "label": "Students",
+      "share": 0.219856,
+      "n": 219856,
+      "ltv_control": -6.205252041222368,
+      "ltv_treatment": -7.966095164352558,
+      "ltv_diff": -1.76084312313019,
+      "ltv_se": 0.08182182941817986,
+      "ltv_ci_low": -1.9212109619390023,
+      "ltv_ci_high": -1.6004752843213776,
+      "ltv_p": 0.0,
+      "value6_diff": -0.8624311886991753,
+      "value6_ci_low": -0.9112598254140616,
+      "value6_ci_high": -0.8136025519842891,
+      "ltv_p_holm": 0.0,
+      "launch": false
+    },
+    {
+      "segment": "salaried_under_35",
+      "label": "Salaried, under 35",
+      "share": 0.380337,
+      "n": 380337,
+      "ltv_control": 62.0606831314178,
+      "ltv_treatment": 68.9103974331447,
+      "ltv_diff": 6.849714301726898,
+      "ltv_se": 0.2793361682509488,
+      "ltv_ci_low": 6.302225472375618,
+      "ltv_ci_high": 7.397203131078179,
+      "ltv_p": 0.0,
+      "value6_diff": 1.7626366021198017,
+      "value6_ci_low": 1.6045837736455528,
+      "value6_ci_high": 1.9206894305940505,
+      "ltv_p_holm": 0.0,
+      "launch": true
+    },
+    {
+      "segment": "salaried_35_plus",
+      "label": "Salaried, 35+",
+      "share": 0.249888,
+      "n": 249888,
+      "ltv_control": 99.33659832205899,
+      "ltv_treatment": 106.82986483249034,
+      "ltv_diff": 7.493266510431354,
+      "ltv_se": 0.4838592285123559,
+      "ltv_ci_low": 6.5449198489598,
+      "ltv_ci_high": 8.441613171902908,
+      "ltv_p": 0.0,
+      "value6_diff": 1.9097272502279878,
+      "value6_ci_low": 1.6428835275289984,
+      "value6_ci_high": 2.176570972926977,
+      "ltv_p_holm": 0.0,
+      "launch": true
+    },
+    {
+      "segment": "self_employed",
+      "label": "Self-employed",
+      "share": 0.149919,
+      "n": 149919,
+      "ltv_control": 79.22657696745232,
+      "ltv_treatment": 76.85338802519657,
+      "ltv_diff": -2.3731889422557515,
+      "ltv_se": 0.49972616668101777,
+      "ltv_ci_low": -3.3526342310828063,
+      "ltv_ci_high": -1.3937436534286967,
+      "ltv_p": 2.044464292083603e-06,
+      "value6_diff": -0.9190309577324349,
+      "value6_ci_low": -1.2038676910552255,
+      "value6_ci_high": -0.6341942244096443,
+      "ltv_p_holm": 2.044464292083603e-06,
+      "launch": false
+    },
+    {
+      "segment": "all",
+      "label": "All customers",
+      "share": 1.0,
+      "n": 1000000,
+      "ltv_control": 58.95673818016124,
+      "ltv_treatment": 62.656716765225056,
+      "ltv_diff": 3.6999785850638176,
+      "ltv_se": 0.19470879324974388,
+      "ltv_ci_low": 3.318356362821064,
+      "ltv_ci_high": 4.081600807306571,
+      "ltv_p": 0.0,
+      "value6_diff": 0.8109636436288135,
+      "value6_ci_low": 0.7025070926107106,
+      "value6_ci_high": 0.9194201946469163,
+      "ltv_p_holm": NaN,
+      "launch": false
+    }
+  ],
+  "business_case": {
+    "per_n_customers": 100000,
+    "full_launch_value": 373475.91314216226,
+    "full_launch_ci": [
+      338500.4325771146,
+      408451.3937072099
+    ],
+    "targeted_launch_value": 447767.7170134573,
+    "targeted_launch_ci": [
+      416220.41409421334,
+      479315.0199327013
+    ],
+    "targeted_segments": [
+      "salaried_under_35",
+      "salaried_35_plus"
+    ],
+    "targeted_share_of_customers": 0.630225,
+    "uplift_targeted_vs_full": 74291.80387129507
+  }
+}

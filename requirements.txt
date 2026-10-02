@@ -1,0 +1,7 @@
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+matplotlib>=3.8
+pyyaml>=6.0
+# Optional, only for running the dbt models on BigQuery:
+# dbt-bigquery>=1.8

@@ -1,0 +1,16 @@
+{
+  "assumptions": {
+    "baseline_salary_rate": 0.1,
+    "mde_salary_abs": 0.01,
+    "ltv_sd": 100.0,
+    "mde_ltv": 1.5,
+    "smallest_segment_share": 0.15,
+    "alpha": 0.05,
+    "power": 0.8
+  },
+  "n_per_arm_primary": 14749,
+  "n_total_primary": 29498,
+  "n_per_arm_ltv_per_segment": 69768,
+  "n_total_for_segment_ltv": 930240,
+  "n_planned": 1000000
+}

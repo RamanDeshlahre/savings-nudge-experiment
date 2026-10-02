@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: fct_experiment_users
+    description: One row per randomised customer with covariates and 30-day outcomes.
+    columns:
+      - name: user_id
+        tests: [unique, not_null]
+      - name: variant
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["control", "treatment"]
+      - name: segment
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["student", "salaried_under_35", "salaried_35_plus", "self_employed"]
+      - name: pre_card_spend
+        tests: [not_null]
+      - name: card_spend_m1
+        tests: [not_null]
+
+  - name: fct_user_monthly_value
+    description: Monthly value generated per open account.
+    columns:
+      - name: user_id
+        tests: [not_null]
+      - name: month_number
+        tests: [not_null]
+      - name: net_value
+        tests: [not_null]
+
+  - name: agg_weekly_pot_transfers
+    description: Weekly pot transfers per assigned user by arm.
+    columns:
+      - name: variant
+        tests: [not_null]

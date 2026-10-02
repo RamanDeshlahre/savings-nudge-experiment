@@ -1,0 +1,336 @@
+{
+  "srm": {
+    "exposure_logs": {
+      "n_a": 472229,
+      "n_b": 500096,
+      "share_a": 0.4856699148947111,
+      "chi2": 798.6729632581698,
+      "p_value": 1.0485354000209838e-175
+    },
+    "server_assignments": {
+      "n_a": 499904,
+      "n_b": 500096,
+      "share_a": 0.499904,
+      "chi2": 0.036864,
+      "p_value": 0.847742205425022
+    },
+    "drilldown": [
+      {
+        "platform": "android",
+        "app_version": "5.x_legacy",
+        "logged_users": 41580,
+        "treatment_share": 0.165993265993266,
+        "p_value": 0.0
+      },
+      {
+        "platform": "android",
+        "app_version": "6.x_current",
+        "logged_users": 380948,
+        "treatment_share": 0.500514505916818,
+        "p_value": 0.5253526058127148
+      },
+      {
+        "platform": "ios",
+        "app_version": "5.x_legacy",
+        "logged_users": 84466,
+        "treatment_share": 0.5012667819004096,
+        "p_value": 0.4615295691760569
+      },
+      {
+        "platform": "ios",
+        "app_version": "6.x_current",
+        "logged_users": 465331,
+        "treatment_share": 0.4992510707431914,
+        "p_value": 0.3068912885151267
+      }
+    ],
+    "naive_primary": {
+      "mean_control": 0.09565963335039672,
+      "mean_treatment": 0.15535894661276625,
+      "diff": 0.05969931326236953,
+      "se": 0.0006714644471318619,
+      "ci_low": 0.05838326712909198,
+      "ci_high": 0.06101535939564708,
+      "p_value": 0.0,
+      "rel_lift": 0.624080515170843,
+      "n_control": 500096,
+      "n_treatment": 472229
+    }
+  },
+  "primary": {
+    "raw": {
+      "mean_control": 0.09565963335039672,
+      "mean_treatment": 0.15245527141211113,
+      "diff": 0.05679563806171441,
+      "se": 0.0006568564045303342,
+      "ci_low": 0.05550822316582048,
+      "ci_high": 0.058083052957608336,
+      "p_value": 0.0,
+      "rel_lift": 0.5937262779763609,
+      "n_control": 500096,
+      "n_treatment": 499904
+    },
+    "cuped": {
+      "mean_control": 0.09562531160914955,
+      "mean_treatment": 0.15248960633543795,
+      "diff": 0.0568642947262884,
+      "se": 0.0006450178717758749,
+      "ci_low": 0.05560008292822301,
+      "ci_high": 0.05812850652435379,
+      "p_value": 0.0,
+      "rel_lift": 0.5946573534704963,
+      "n_control": 500096,
+      "n_treatment": 499904,
+      "theta": 0.05391516661254111,
+      "variance_reduction": 0.035721200699376676,
+      "corr_xy": 0.18824003391431074
+    }
+  },
+  "secondary": [
+    {
+      "metric": "pot_created_30d",
+      "label": "Savings pot opened (30d)",
+      "type": "secondary",
+      "cuped_variance_reduction": 0.0,
+      "mean_control": 0.21036960903506527,
+      "mean_treatment": 0.43781606068365125,
+      "diff": 0.22744645164858598,
+      "ci_low": 0.22566673614667526,
+      "ci_high": 0.2292261671504967,
+      "p_value": 0.0,
+      "rel_lift": 1.0811754259175064,
+      "guardrail_threshold": NaN,
+      "guardrail_pass": NaN
+    },
+    {
+      "metric": "salary_switched_6m",
+      "label": "Salary moved in (6 months)",
+      "type": "secondary",
+      "cuped_variance_reduction": 0.0,
+      "mean_control": 0.12545391284873306,
+      "mean_treatment": 0.18028861541415953,
+      "diff": 0.05483470256542647,
+      "ci_low": 0.05342814279156356,
+      "ci_high": 0.056241262339289375,
+      "p_value": 0.0,
+      "rel_lift": 0.43709041288766975,
+      "guardrail_threshold": NaN,
+      "guardrail_pass": NaN
+    },
+    {
+      "metric": "card_spend_m1",
+      "label": "Card spend, month 1 (\u00a3)",
+      "type": "secondary",
+      "cuped_variance_reduction": 0.607859463349416,
+      "mean_control": 778.5545907269217,
+      "mean_treatment": 805.9671447434491,
+      "diff": 27.41255401652745,
+      "ci_low": 25.534708717843454,
+      "ci_high": 29.29039931521145,
+      "p_value": 0.0,
+      "rel_lift": 0.03520954643775572,
+      "guardrail_threshold": NaN,
+      "guardrail_pass": NaN
+    },
+    {
+      "metric": "savings_balance_m1",
+      "label": "Savings balance, month 1 (\u00a3)",
+      "type": "secondary",
+      "cuped_variance_reduction": 0.10671817681842322,
+      "mean_control": 69.86221775932876,
+      "mean_treatment": 182.16407475721485,
+      "diff": 112.30185699788609,
+      "ci_low": 110.88689723498855,
+      "ci_high": 113.71681676078363,
+      "p_value": 0.0,
+      "rel_lift": 1.6074762668537006,
+      "guardrail_threshold": NaN,
+      "guardrail_pass": NaN
+    },
+    {
+      "metric": "support_contacts_m1",
+      "label": "Support contacts per user, month 1",
+      "type": "guardrail",
+      "cuped_variance_reduction": 0.0,
+      "mean_control": 0.09937691963143076,
+      "mean_treatment": 0.1502628504672897,
+      "diff": 0.05088593083585895,
+      "ci_low": 0.04950129735506158,
+      "ci_high": 0.05227056431665632,
+      "p_value": 0.0,
+      "rel_lift": 0.5120497900778647,
+      "guardrail_threshold": 0.1,
+      "guardrail_pass": 1.0
+    },
+    {
+      "metric": "closed_m1",
+      "label": "Account closed in month 1",
+      "type": "guardrail",
+      "cuped_variance_reduction": 0.0,
+      "mean_control": 0.013711367417455848,
+      "mean_treatment": 0.012954487261554218,
+      "diff": -0.0007568801559016299,
+      "ci_low": -0.001206476810694562,
+      "ci_high": -0.0003072835011086977,
+      "p_value": 0.0009684672532375149,
+      "rel_lift": -0.0552009243759343,
+      "guardrail_threshold": 0.003,
+      "guardrail_pass": 1.0
+    },
+    {
+      "metric": "active_m6",
+      "label": "Account still open at month 6",
+      "type": "secondary",
+      "cuped_variance_reduction": 0.0,
+      "mean_control": 0.9347305317379063,
+      "mean_treatment": 0.9369678978363846,
+      "diff": 0.002237366098478244,
+      "ci_low": 0.001276910585632124,
+      "ci_high": 0.003197821611324364,
+      "p_value": 4.97817354649932e-06,
+      "rel_lift": 0.0023935947553980082,
+      "guardrail_threshold": NaN,
+      "guardrail_pass": NaN
+    }
+  ],
+  "segments": [
+    {
+      "segment": "student",
+      "label": "Students",
+      "n": 219856,
+      "mean_control": 0.04175730161186097,
+      "mean_treatment": 0.04397952410827128,
+      "diff": 0.0022222224964103116,
+      "se": 0.0008639889086482262,
+      "ci_low": 0.0005288353524177214,
+      "ci_high": 0.003915609640402901,
+      "p_value": 0.010109834923214045,
+      "rel_lift": 0.05321757897735182,
+      "n_control": 109873,
+      "n_treatment": 109983,
+      "p_holm": 0.010109834923214045
+    },
+    {
+      "segment": "salaried_under_35",
+      "label": "Salaried, under 35",
+      "n": 380337,
+      "mean_control": 0.134984806586266,
+      "mean_treatment": 0.2314080884480047,
+      "diff": 0.09642328186173871,
+      "se": 0.0012447308125759502,
+      "ci_low": 0.09398365429864257,
+      "ci_high": 0.09886290942483485,
+      "p_value": 0.0,
+      "rel_lift": 0.714326925379684,
+      "n_control": 190214,
+      "n_treatment": 190123,
+      "p_holm": 0.0
+    },
+    {
+      "segment": "salaried_35_plus",
+      "label": "Salaried, 35+",
+      "n": 249888,
+      "mean_control": 0.10374137420938583,
+      "mean_treatment": 0.1723505331378628,
+      "diff": 0.06860915892847698,
+      "se": 0.001373402081171713,
+      "ci_low": 0.06591734031308806,
+      "ci_high": 0.0713009775438659,
+      "p_value": 0.0,
+      "rel_lift": 0.6613480826849283,
+      "n_control": 125061,
+      "n_treatment": 124827,
+      "p_holm": 0.0
+    },
+    {
+      "segment": "self_employed",
+      "label": "Self-employed",
+      "n": 149919,
+      "mean_control": 0.06138922986604046,
+      "mean_treatment": 0.07824358752050793,
+      "diff": 0.016854357654467474,
+      "se": 0.001315607481265331,
+      "ci_low": 0.014275814373395972,
+      "ci_high": 0.019432900935538976,
+      "p_value": 0.0,
+      "rel_lift": 0.2745490974759896,
+      "n_control": 74948,
+      "n_treatment": 74971,
+      "p_holm": 0.0
+    }
+  ],
+  "novelty": [
+    {
+      "week": 1,
+      "control": 0.03591110506782698,
+      "treatment": 0.20704175201638714,
+      "diff": 0.17113064694856017,
+      "ci_low": 0.16874105021558103,
+      "ci_high": 0.17352024368153932,
+      "rel_lift": 4.765396292465457
+    },
+    {
+      "week": 2,
+      "control": 0.07866889557205016,
+      "treatment": 0.3112137530405838,
+      "diff": 0.23254485746853365,
+      "ci_low": 0.2299272705091217,
+      "ci_high": 0.2351624444279456,
+      "rel_lift": 2.955994942824051
+    },
+    {
+      "week": 3,
+      "control": 0.1208108043255695,
+      "treatment": 0.38195733580847524,
+      "diff": 0.26114653148290573,
+      "ci_low": 0.258413972012307,
+      "ci_high": 0.2638790909535045,
+      "rel_lift": 2.1616157010191706
+    },
+    {
+      "week": 4,
+      "control": 0.1617669407473765,
+      "treatment": 0.45340705415439764,
+      "diff": 0.2916401134070211,
+      "ci_low": 0.28877268471588935,
+      "ci_high": 0.2945075420981529,
+      "rel_lift": 1.8028412484010636
+    },
+    {
+      "week": 5,
+      "control": 0.18076329344765804,
+      "treatment": 0.47269675777749326,
+      "diff": 0.29193346432983525,
+      "ci_low": 0.28903887006118456,
+      "ci_high": 0.29482805859848593,
+      "rel_lift": 1.6150041236904533
+    },
+    {
+      "week": 6,
+      "control": 0.18109922894804198,
+      "treatment": 0.4575978587888875,
+      "diff": 0.2764986298408455,
+      "ci_low": 0.273651121760624,
+      "ci_high": 0.279346137921067,
+      "rel_lift": 1.526779718759454
+    },
+    {
+      "week": 7,
+      "control": 0.17971149539288456,
+      "treatment": 0.4516447157854308,
+      "diff": 0.27193322039254625,
+      "ci_low": 0.2691034190870965,
+      "ci_high": 0.274763021697996,
+      "rel_lift": 1.513165419930689
+    },
+    {
+      "week": 8,
+      "control": 0.18062132070642437,
+      "treatment": 0.447515923057227,
+      "diff": 0.26689460235080265,
+      "ci_low": 0.26407508045661804,
+      "ci_high": 0.26971412424498725,
+      "rel_lift": 1.4776472750113696
+    }
+  ]
+}
